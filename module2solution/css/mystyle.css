@@ -1,0 +1,73 @@
+* {font-family: serif; box-sizing: border-box;}
+h1 {text-align: center; font-size: 175%; margin: 30px;}
+h2 {margin: 0px; font-size: 125%;}
+.row {
+	width: 100%;
+}
+
+#top1 {
+	width: 33%;
+	position: absolute;
+	top: 0px; right: 0px;
+	border: 1px solid black;
+	text-align: center;
+	background-color: chocolate;
+}
+#top2 {
+	width: 33%;
+	position: absolute;
+	top: 0px; right: 0px;
+	border: 1px solid black;
+	text-align: center;
+	background-color: red;
+}
+#top3 {
+	width: 33%;
+	position: absolute;
+	top: 0px; right: 0px;
+	border: 1px solid black;
+	text-align: center;
+	background-color: azure;
+}
+
+@media (min-width: 992px) {
+.desktop {
+	width: calc(33% - 20px);
+	margin: 10px;
+	float: left;
+	border: 1px solid black;
+	background-color: lightgrey;
+	position: relative;
+	padding: 30px 10px 10px 10px;
+}
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+.tablet {
+	width: calc(50% - 20px);
+	float: left;
+	border: 1px solid black;
+	background-color: lightgrey;
+	position: relative;
+	padding: 30px 10px 10px 10px;
+	margin: 10px;
+}
+.tablet2 {
+	width: calc(100% - 20px);
+	float: left;
+	border: 1px solid black;
+	background-color: lightgrey;
+	position: relative;
+	padding: 30px 10px 10px 10px;
+	margin: 10px;
+}
+}
+@media (max-width: 767.9px) {
+.mobile {
+	width: calc(100% - 20px);
+	border: 1px solid black;
+	background-color: lightgrey;
+	position: relative;
+	padding: 30px 10px 10px 10px;
+	margin: 10px;
+}
+}
